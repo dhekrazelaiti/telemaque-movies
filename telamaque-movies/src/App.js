@@ -3,9 +3,12 @@ import axios from 'axios';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Config from './Config/Config';
+import Top10 from './components/TopMovies/Top10';
+import TopRest30 from './components/TopMovies/TopRest30';
+
 
 const useStyles = makeStyles(theme => ({
   progress: {
@@ -63,14 +66,9 @@ const App = () => {
   return <>
     <Header />
     <div>
-    <h1>Top 10 movies</h1>
-      <ul>
-        {top10Movies.map(movie => <li key={movie.id}>{movie.id}: {movie.title}</li>)}
-      </ul>
-      <h1>Rest of 30 movies</h1>
-      <ul>
-        {topRest30Movies.map(movie => <li key={movie.id}>{movie.id}: {movie.title}</li>)}
-      </ul>
+    <Top10 data={top10Movies} />
+      <TopRest30 data={topRest30Movies} />
+
     </div>
     <Footer />
   </>;
