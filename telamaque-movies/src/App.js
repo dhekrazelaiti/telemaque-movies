@@ -66,7 +66,7 @@ const App = () => {
   return <>
     <Header />
     <div>
-    <Top10 data={top10Movies} />
+      <Top10 data={top10Movies} categories={categories} />
       <TopRest30 data={topRest30Movies} />
 
     </div>
