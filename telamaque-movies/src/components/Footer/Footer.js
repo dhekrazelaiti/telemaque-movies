@@ -19,7 +19,7 @@ const Footer = () => {
     const classes = useStyles();
 
     return <div className={classes.root}>
-        By <span className={classes.creatorName}>Dhekra ZELAITI</span> &lt;dhekra.zelaiti@gmail.com&gt; | 06 37 27 38 77
+        By <span className={classes.creatorName}>Dhekra ZELAITI</span> &lt;dhekra.zelaiti@gmail.com&gt; | Copyright© Telemaque2020
     </div>;
 }
 
