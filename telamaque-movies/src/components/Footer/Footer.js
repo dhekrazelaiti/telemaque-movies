@@ -7,7 +7,8 @@ const useStyles = makeStyles(theme => ({
         borderTop: '1px dashed gray',
         textAlign: 'center',
         padding: 10,
-        color: 'gray'
+        color: 'gray',
+        marginTop: 50
     },
     creatorName: {
         fontWeight: 'bold'

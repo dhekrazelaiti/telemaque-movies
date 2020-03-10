@@ -11,6 +11,11 @@ import TopRest30 from './components/TopMovies/TopRest30';
 
 
 const useStyles = makeStyles(theme => ({
+  container: {
+    maxWidth: 1264,
+    margin: '0 auto',
+    
+  },
   progress: {
     marginTop: 200,
   },
@@ -65,10 +70,9 @@ const App = () => {
   }
   return <>
     <Header />
-    <div>
+    <div className={classes.container}>
       <Top10 data={top10Movies} categories={categories} />
-      <TopRest30 data={topRest30Movies} />
-
+      <TopRest30 data={topRest30Movies} categories={categories} />
     </div>
     <Footer />
   </>;
